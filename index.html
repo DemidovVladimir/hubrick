@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hubrick task</title>
+</head>
+<body>
+<h1>Task runner...</h1>
+<h3>To run tests, open SpecRunner.html inside jasmine-standalone</h3>
+<form name='tasks' onsubmit='initialTest(event)'>
+  <div id='container'>
+    <div id='task-0'>
+      <label>Main rule title (not necessary field):
+        <input name='title-0' type='text'/>
+      </label>
+      </br>
+      <label>Rule id (auto set field):
+        <input disabled='true' name='id-0' type='text' value='0'/>
+      </label>
+      </br>
+      <label>Rule body (expressions like: [property], [property='String']):
+        <textarea name='body-0'></textarea>
+      </label>
+      </br>
+      <label>If rule passed (Type in next rule if not task will be over):
+        <input name='condition-true-0' type='text'/>
+      </label>
+      </br>
+      <label>If rule failed (Type message appended to console):
+        <input name='condition-false-0' type='text'/>
+      </label>
+      <label>Paste JSON (Paste JSON object):
+        <textarea name='json-object'></textarea>
+      </label>
+      </br>
+    </div>
+  </div>
+  <button type='button' onclick='addTask()'>Add task</button>
+  <button type='submit'>Submit to execute task</button>
+</form>
+<script type='text/javascript' src='./index.js'></script>
+</body>
+</html>
